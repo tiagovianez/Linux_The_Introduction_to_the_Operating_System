@@ -1,105 +1,115 @@
-# 1) EXERCICIOS PRÁTICOS DE REVISÃO :notebook:
+# Lista 6 - EXERCICIO PRÁTICO DE REVISÃO :notebook:
 
 
 
-### Abra o Terminal
+### 1) Crie um usuário chamado teste
 
-CTRL + Alt + T
+_sudo adduser teste_
 
+![image-20210907223752244](C:\Users\Tiago\AppData\Roaming\Typora\typora-user-images\image-20210907223752244.png)
 
 
-### Crie uma Pasta de nome Ubuntu dentro da Pasta Documentos
 
-cd /Documentos
-mkdir Ubuntu
+### 2) Crie um grupo chamado, grupoteste
 
+_sudo addgroup grupoteste_
 
 
-### Mova esta Pasta para o diretório Pessoal
-mv Ubuntu/~
 
+### 3) Adicione o usuário teste ao grupo teste
+_sudo adduser teste grupoteste_
 
 
-### Crie um arquivo vazio de nome teste.txt dentro da Pasta Ubuntu
 
-cd /Ubuntu
-touch teste.txt
+### 4) Troque a senha do usuario teste
 
+_sudo passwd teste_
 
 
-### Renomeie este Arquivo como linux.txt
 
-mv teste.txt linux.txt
+### 5) Troque o usuário atual para o usuário teste
 
+_su teste_
 
 
-### Crie uma cópia deste arquivo na Pasta Downloads
 
-cp linux.txt ~/Downloads/
+### 6) Exiba os grupos de usuários teste
 
+_cat /etc/group | more_
 
 
-### Exiba todos os comandos digitados no Terminal
 
-history
+### 7) Exiba todos os usuários do sistema
 
+_cat /etc/passwd | more_
 
 
-### Execute a ajuda do comando ls
 
-ls --help
+### 8) Exiba todos os grupos do sistema
 
+_cat /etc/group | more_
 
 
 
+### 9) Delete o usuário teste
 
-### Execute o manual do comando mv
+su "usuário principal"
 
-man mv
+_sudo userdel -r teste_
 
+##### Feche o terminal e abra novamente
 
+_sudo userdel -r teste_
 
 
 
-### Pare a execução do manual
+### 10) Delete o Grupo grupoteste
 
-CTRL + Z
+_sudo groupdel grupoteste_
 
 
 
-### Saia do Terminal utilizando sequência de teclas
+### 11) Troque para o usuário root
 
-CTRL + C
+_sudo su_
 
 
 
-### Exclua a pasta Ubuntu
+### 12) Crie um arquivo de nome teste.txt
 
-rmdir Ubuntu
+_touch teste.txt_
 
 
 
-### Exclua o arquivo linux.txt 
+### 13) Edite o arquivo teste.txt com o nome desse curso 
 
-rm linux.txt
+_nano teste.txt_
 
+![image-20210907225649971](C:\Users\Tiago\AppData\Roaming\Typora\typora-user-images\image-20210907225649971.png)
 
 
-### Limpe o terminal
 
-CTRL + L;
 
-clear
 
+### 14) Mude as permissões do arquivo teste.txt para 111
 
+_chmod 111 teste.txt_
 
-### Utilize o comando para sair do terminal
 
-exit
 
+### 15) Saia do usuário root para seu computador
 
+_su "user"_
 
 
 
-#### Espero que tenham gostado, pessoal :smile:
+### 16) Tente exibir o arquivo teste.txt no terminal
+
+_cat teste.txt_
+
+
+
+### 17) Desligue o computador pelo terminal
+
+_shutdown -h now_
 

@@ -1,105 +1,132 @@
-# 1) EXERCICIOS PRÁTICOS DE REVISÃO :notebook:
+# Lista 5 - REVISÃO DO CONTEÚDO COM JSLinux (Fedora):notebook:
 
 
 
-### Abra o Terminal
+### 1) Primeiramente acesse o site: https://bellard.org/jslinux/
 
-CTRL + Alt + T
 
 
+### 2) Acesse em seguida o Fedora 33 (Linux) com a interface Console 
 
-### Crie uma Pasta de nome Ubuntu dentro da Pasta Documentos
+![image-20210907214518970](C:\Users\Tiago\AppData\Roaming\Typora\typora-user-images\image-20210907214518970.png)
 
-cd /Documentos
-mkdir Ubuntu
+##### Fique tranquilo (a), não há necessidade de instalar esse sistema em máquina virtual nenhuma, ele roda todo no próprio navegador mesmo.
 
 
 
-### Mova esta Pasta para o diretório Pessoal
-mv Ubuntu/~
+### 3) Imprima no terminal do Fedora uma sequência de 1 a 10.
 
+_seq 1 10_
 
 
-### Crie um arquivo vazio de nome teste.txt dentro da Pasta Ubuntu
 
-cd /Ubuntu
-touch teste.txt
+### 4) Calcule o tempo de rota pelo Fedora para o site (www.pudim.com.br)
+_time traceroute www.pudim.com.br_
 
 
 
-### Renomeie este Arquivo como linux.txt
+### 5) Calcule o tempo de resposta do Fedora em processar uma sequencia de 1 a 10
 
-mv teste.txt linux.txt
+_time seq 1 10_
 
 
 
-### Crie uma cópia deste arquivo na Pasta Downloads
+### 6) Crie um arquivo e acesse-o através do editor de texto do fedora (vi)
 
-cp linux.txt ~/Downloads/
+_vi texto.txt_
 
 
 
-### Exiba todos os comandos digitados no Terminal
+### 7) Escreva no editor "Olá Mundo"
 
-history
+##### Para ativar o modo insert no vi, é preciso eu pressionar o qualquer teclado do teclado 2x, para entrar em modo insert.
 
+Após inserir o texto "Olá Mundo", aperte a tecla "ESC", em seguida digite ":wq! + ENTER"
 
 
-### Execute a ajuda do comando ls
 
-ls --help
+### 8) Imprima no terminal Fedora 33 "Olá Mundo"
 
+_cat texto.txt_
 
 
 
+### 9) Imprima no terminal a quantidade de linhas do texto
 
-### Execute o manual do comando mv
+_wc -l texto.txt_
 
-man mv
 
 
+### 10) Imprima no terminal a quantidade de palavras do texto
 
+_wc -w texto.txt_
 
 
-### Pare a execução do manual
 
-CTRL + Z
+### 10) Imprima no terminal a quantidade de bytes
 
+_wc -c texto.txt_
 
 
-### Saia do Terminal utilizando sequência de teclas
 
-CTRL + C
+### 11) Crie um arquivo "vazio.txt" e faça a comparação com o "texto.txt"
 
+_touch vazio.txt_
 
+_cmp vazio.txt texto.txt_
 
-### Exclua a pasta Ubuntu
 
-rmdir Ubuntu
 
+### 12) Edite o arquivo vazio.txt com o vi (escreva uma sequencia de números aleatórios com quebras de linhas)
 
+_vi vazio.txt_
 
-### Exclua o arquivo linux.txt 
+Após o preenchimento, aperte a tecla "ESC", insira ":wq!" + "Enter"
 
-rm linux.txt
 
 
+### 13) Organize esses valores aleatórios do arquivo vazio.txt em ordem numérica 
 
-### Limpe o terminal
+_sort -n vazio.txt_
 
-CTRL + L;
 
-clear
 
+### 14) Desligue a máquina por comando
 
+_init 0_
 
-### Utilize o comando para sair do terminal
+ou
 
-exit
+_telinit 0_
 
+ou
 
+_halt_
 
 
 
-#### Espero que tenham gostado, pessoal :smile:
+### 15) Imprima no terminal Fedora as informações de reinicialização
 
+_last reboot_
+
+
+
+### 15) Utilize o comando elias, criando apelido para o "history"
+
+_alias hh='history'_
+
+_hh_
+
+![image-20210907222316358](C:\Users\Tiago\AppData\Roaming\Typora\typora-user-images\image-20210907222316358.png)
+
+
+
+### 16) Utilize o comando para saber onde está o programa "ls"
+
+_whereis ls_
+
+
+
+### 17) Por fim, utilize o comando para sair do local host (Agora é só dar F5 no navegador) 
+
+_logout_

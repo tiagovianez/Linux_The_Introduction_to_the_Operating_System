@@ -1,105 +1,138 @@
-# 1) EXERCICIOS PRÁTICOS DE REVISÃO :notebook:
+# Lista 3 - EXERCICIO PRÁTICO DE REVISÃO :notebook:
 
 
 
-### Abra o Terminal
+### 1) Criando o arquivo 
 
-CTRL + Alt + T
+_touch minhamaquina.txt_
 
 
 
-### Crie uma Pasta de nome Ubuntu dentro da Pasta Documentos
+### 2) Inserindo título de informações sobre o Hardware no arquivo minhamaquina.txt
 
-cd /Documentos
-mkdir Ubuntu
+_echo -e "---INFORMAÇOES DE HARDWARE---n\" > minhamaquina.txt_
 
 
 
-### Mova esta Pasta para o diretório Pessoal
-mv Ubuntu/~
+### 3) Exiba todos os hardwares que existem na máquina com paginação
 
+_lshw | more_
 
 
-### Crie um arquivo vazio de nome teste.txt dentro da Pasta Ubuntu
 
-cd /Ubuntu
-touch teste.txt
+### 4) Salve a saída do comando anterior no arquivo minhamaquina.txt
 
+_lshw >> minhamaquina.txt_
 
 
-### Renomeie este Arquivo como linux.txt
 
-mv teste.txt linux.txt
+### 5) Exiba informações sobre a memória física e virtual na sua máquina
 
+_free_
 
 
-### Crie uma cópia deste arquivo na Pasta Downloads
 
-cp linux.txt ~/Downloads/
+### 6) Adicione a saída do comando anterior ao arquivo minhamaquina.txt 
 
+_echo -e "\n---INFORMACOES SOBRE MEMORIA---" >> minhamaquina.txt_
 
+_free >> minhamaquina.txt_
 
-### Exiba todos os comandos digitados no Terminal
 
-history
 
+### 7) Exiba todas as placas PCI conectadas
 
+_lspci_
 
-### Execute a ajuda do comando ls
 
-ls --help
 
+### 8) Adicione a saída do comando anterior ao arquivo minhamaquina.txt
 
+_echo -e "\n---INFORMACOES SOBRE PLACAS CONECTADAS---" >> minhamaquina.txt_
 
+_lspci >> minhamaquina.txt_
 
 
-### Execute o manual do comando mv
 
-man mv
+### 9) Exiba todos dispositivos USB conectados
 
+_lsusb_
 
 
 
+### 10) Adicione a saída do comando anterior ao arquivo minhamaquina.txt
 
-### Pare a execução do manual
+_echo -e "\n---INFORMACOES SOBRE USB---" >> minhamaquina.txt_
 
-CTRL + Z
+_lsusb >> minhamaquina.txt_
 
 
 
-### Saia do Terminal utilizando sequência de teclas
+### 11) Exiba as informações sobre processador
 
-CTRL + C
+_lscpu_
 
 
 
-### Exclua a pasta Ubuntu
+### 12) Adicione a saída do comando anterior ao arquivo minhamaquina.txt 
 
-rmdir Ubuntu
+_echo -e "\n---INFORMACOES DE CPU (PROCESSADOR)---" >> minhamaquina.txt_
 
+_lscpu >> minhamaquina.txt_
 
 
-### Exclua o arquivo linux.txt 
 
-rm linux.txt
+### 13) Exiba o nome do kernel
 
+_uname_
 
 
-### Limpe o terminal
 
-CTRL + L;
+### 14) Adicione a saída do comando anterior ao arquivo minhamaquina.txt
 
-clear
+_echo -e "\n---INFORMACOES DO KERNEL (NOME)---" >> minhamaquina.txt_
 
+_uname >> minhamaquina.txt_
 
 
-### Utilize o comando para sair do terminal
 
-exit
+### 15) Exiba a versão do Kernel
 
+_uname -r_
 
 
 
+### 16) Adicione a saída do comando anterior ao arquivo minhamaquina.txt
 
-#### Espero que tenham gostado, pessoal :smile:
+_echo -e "\n---INFORMACOES DA VERSÃO DO KERNEL---" >> minhamaquina.txt_
+
+_uname -r >> minhamaquina.txt_
+
+
+
+### 17) Exiba a arquitetura do Kernel e adicione a saida desse comando ao arquivo minhamaquina.txt
+
+_uname -m_ 
+
+_echo -e "\n---INFORMACOES DE ARQUITETURA---" >> minhamaquina.txt_
+
+_uname -m >> minhamaquina.txt_
+
+
+
+### 18) Reinicie a máquina
+
+_reboot_
+
+
+
+### 19) Abra o arquivo minhamaquina.txt
+
+Pela própria pasta do sistema Linux
+
+
+
+### 20) Desligue a maquina
+
+_init0_
 

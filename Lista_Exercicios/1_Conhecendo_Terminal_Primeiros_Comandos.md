@@ -1,105 +1,97 @@
-# 1) EXERCICIOS PRÁTICOS DE REVISÃO :notebook:
+# Lista 1 - EXERCICIO PRÁTICO DE REVISÃO :notebook:
 
 
 
-### Abra o Terminal
+### 1) Abra o Terminal
 
-CTRL + Alt + T
+_CTRL + Alt + T_
 
 
 
-### Crie uma Pasta de nome Ubuntu dentro da Pasta Documentos
+### 2) Crie uma Pasta de nome Ubuntu dentro da Pasta Documentos
 
-cd /Documentos
-mkdir Ubuntu
+_cd /Documentos
+mkdir Ubuntu_
 
 
 
-### Mova esta Pasta para o diretório Pessoal
-mv Ubuntu/~
+### 3) Mova esta Pasta para o diretório Pessoal
+_mv Ubuntu/~_
 
 
 
-### Crie um arquivo vazio de nome teste.txt dentro da Pasta Ubuntu
+### 4) Crie um arquivo vazio de nome teste.txt dentro da Pasta Ubuntu
 
-cd /Ubuntu
-touch teste.txt
+_cd /Ubuntu
+touch teste.txt_
 
 
 
-### Renomeie este Arquivo como linux.txt
+### 5) Renomeie este Arquivo como linux.txt
 
-mv teste.txt linux.txt
+_mv teste.txt linux.txt_
 
 
 
-### Crie uma cópia deste arquivo na Pasta Downloads
+### 6) Crie uma cópia deste arquivo na Pasta Downloads
 
-cp linux.txt ~/Downloads/
+_cp linux.txt ~/Downloads/_
 
 
 
-### Exiba todos os comandos digitados no Terminal
+### 7) Exiba todos os comandos digitados no Terminal
 
-history
+_history_
 
 
 
-### Execute a ajuda do comando ls
+### 8) Execute a ajuda do comando ls
 
-ls --help
+_ls --help_
 
 
 
+### 9) Execute o manual do comando mv
 
+_man mv_
 
-### Execute o manual do comando mv
 
-man mv
 
+### 10) Pare a execução do manual
 
+_CTRL + Z_
 
 
 
-### Pare a execução do manual
+### 11) Saia do Terminal utilizando sequência de teclas
 
-CTRL + Z
+_CTRL + C_
 
 
 
-### Saia do Terminal utilizando sequência de teclas
+### 12) Exclua a pasta Ubuntu
 
-CTRL + C
+_rmdir Ubuntu_
 
 
 
-### Exclua a pasta Ubuntu
+### 13) Exclua o arquivo linux.txt 
 
-rmdir Ubuntu
+_rm linux.txt_
 
 
 
-### Exclua o arquivo linux.txt 
+### 14) Limpe o terminal
 
-rm linux.txt
+_CTRL + L_
 
+_clear_
 
 
-### Limpe o terminal
 
-CTRL + L;
+### 15) Utilize o comando para sair do terminal
 
-clear
+_exit_
 
 
-
-### Utilize o comando para sair do terminal
-
-exit
-
-
-
-
-
-#### Espero que tenham gostado, pessoal :smile:
 

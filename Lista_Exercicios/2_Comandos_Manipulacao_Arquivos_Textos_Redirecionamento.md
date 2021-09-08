@@ -1,105 +1,113 @@
-# 1) EXERCICIOS PRÁTICOS DE REVISÃO :notebook:
 
 
+# Lista 2 - EXERCICIO PRÁTICO DE REVISÃO :notebook:
 
-### Abra o Terminal
 
-CTRL + Alt + T
 
+### 1) Crie uma pasta de nome Exercícios e Acesse a mesma
 
+_mkdir Exercicios && cd Exercicios_
 
-### Crie uma Pasta de nome Ubuntu dentro da Pasta Documentos
 
-cd /Documentos
-mkdir Ubuntu
 
+### 2) Crie um arquivo vazio de nome lista_nomes.txt
 
+_touch lista_nomes.txt_
 
-### Mova esta Pasta para o diretório Pessoal
-mv Ubuntu/~
 
 
+### 3) Abra este arquivo com o Editor Nano
+_nano lista_nomes.txt_
 
-### Crie um arquivo vazio de nome teste.txt dentro da Pasta Ubuntu
 
-cd /Ubuntu
-touch teste.txt
 
+### 4) Digite 20 nomes de pessoas incluindo o seu, pulando de linha para cada nome inserido
 
+nome1
 
-### Renomeie este Arquivo como linux.txt
+nome1
 
-mv teste.txt linux.txt
+...
 
+nome20
 
 
-### Crie uma cópia deste arquivo na Pasta Downloads
 
-cp linux.txt ~/Downloads/
+### 5) Salve o arquivo e saia do mesmo
 
+_CTRL + O (Aparecerá uma confirmação para salvar os documento editado, só apertar "ENTER" para salvar)_
 
+_CTRL + X (Sairá do editor)_
 
-### Exiba todos os comandos digitados no Terminal
 
-history
 
+### 6) Exiba os 10 primeiros nomes da lista
 
+_head lista_nomes.txt_
 
-### Execute a ajuda do comando ls
 
-ls --help
 
+### 7) Exiba os 10 últimos nomes da lista
 
+_tail lista_nomes.txt_
 
 
 
-### Execute o manual do comando mv
+### 8) Procure no texto o seu nome
 
-man mv
+_cat lista_nomes.txt | grep "nome"_
 
 
 
+### 9) Crie um arquivo chamado setembro.txt com a saída do comando cal
 
+_cal september 2020 > setembro.txt_
 
-### Pare a execução do manual
 
-CTRL + Z
 
+### 10) Adicione o conteúdo do arquivo setembro.txt ao arquivo lista_nomes.txt
 
+_cat setembro.txt >> lista_nomes.txt_
 
-### Saia do Terminal utilizando sequência de teclas
 
-CTRL + C
 
+### 11) Exiba o arquivo lista_nomes.txt com paginação
 
+_cat lista_nomes.txt | more_
 
-### Exclua a pasta Ubuntu
 
-rmdir Ubuntu
 
+### 12) Exiba o caminho do arquivo setembro.txt
 
+_find ~ -name setembro.txt_
 
-### Exclua o arquivo linux.txt 
 
-rm linux.txt
 
+### 13) Exiba o tipo do arquivo lista_nomes.txt
 
+_file setembro.txt_
 
-### Limpe o terminal
 
-CTRL + L;
 
-clear
+### 14) Exiba a explicação do comando ls
 
+_ls --help_
 
 
-### Utilize o comando para sair do terminal
 
-exit
+### 15) Renomeie o Arquivo lista_nomes.txt para arquivo.txt
 
+_mv lista_nomes.txt arquivo.txt_
 
 
 
+### 16) Limpando o terminal
 
-#### Espero que tenham gostado, pessoal :smile:
+_CTRL + L_
+
+
+
+### 17) Saindo do Terminal 
+
+_exit_
 

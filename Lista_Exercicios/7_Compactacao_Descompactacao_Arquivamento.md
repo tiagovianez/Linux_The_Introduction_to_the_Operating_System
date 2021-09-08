@@ -1,105 +1,107 @@
-# 1) EXERCICIOS PRÁTICOS DE REVISÃO :notebook:
+# Lista 7 - EXERCICIO PRÁTICO DE REVISÃO :notebook:
 
 
 
-### Abra o Terminal
+### 1) Crie um arquivo chamado compactar.txt
 
-CTRL + Alt + T
+_touch compactar.txt_
 
 
 
-### Crie uma Pasta de nome Ubuntu dentro da Pasta Documentos
+### 2) Edite esse arquivo com o nome dos compactadores
 
-cd /Documentos
-mkdir Ubuntu
+_nano compactar.txt_
 
+_gzip
+zip
+rar
+bzip2_
 
+_tar "Arquivador"_
 
-### Mova esta Pasta para o diretório Pessoal
-mv Ubuntu/~
+_CTRL + O (Salvar)_
 
+_CTRL + X (Para sair do editor)_
 
 
-### Crie um arquivo vazio de nome teste.txt dentro da Pasta Ubuntu
 
-cd /Ubuntu
-touch teste.txt
+### 3) Compacte esse arquivo com zip
+_zip compactar.zip compactar.txt_
 
 
 
-### Renomeie este Arquivo como linux.txt
+### 4) Descompacte o arquivo
 
-mv teste.txt linux.txt
+_unzip compactar.zip_
 
 
 
-### Crie uma cópia deste arquivo na Pasta Downloads
+### 5) Compacte o arquivo com rar
 
-cp linux.txt ~/Downloads/
+_rar a compactar.rar compactar.txt_
 
 
 
-### Exiba todos os comandos digitados no Terminal
+### 6) Descompacte o arquivo rar
 
-history
+_rar x compactar.rar compactar.txt_
 
 
 
-### Execute a ajuda do comando ls
+### 7) Compacte este arquivo com gzip
 
-ls --help
+_gzip compactar.txt_
 
 
 
+### 8) Descompacte este arquivo
 
+_gunzip compactar.txt.gz_
 
-### Execute o manual do comando mv
 
-man mv
 
+### 9) Compacte este arquivo com bzip2
 
+_bzip2 compactar.txt_
 
 
 
-### Pare a execução do manual
+### 10) Descompacte este arquivo
 
-CTRL + Z
+_bzip2 -d compactar.txt.bz2_
 
 
 
-### Saia do Terminal utilizando sequência de teclas
+### 11) Realize o arquivamento deste arquivo com tar
 
-CTRL + C
+_tar -cf compactado.tar compactar.txt_
 
 
 
-### Exclua a pasta Ubuntu
+### 12) Compacte o arquivo tar com gzip
 
-rmdir Ubuntu
+_gzip compactado.tar_
 
 
 
-### Exclua o arquivo linux.txt 
+### 13) Descompacte este arquivo 
 
-rm linux.txt
+_tar -xvf compactado.tar.gz_
 
 
 
-### Limpe o terminal
+### 15) Saia do terminal
 
-CTRL + L;
+_exit_
 
-clear
 
 
+### 16) Exiba o arquivo compactar.txt
 
-### Utilize o comando para sair do terminal
+_cat compactar.txt_
 
-exit
 
 
+### 16) Execute o comando init 0 para desligar o sistema
 
-
-
-#### Espero que tenham gostado, pessoal :smile:
-
+_init 0_
